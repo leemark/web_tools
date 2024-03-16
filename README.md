@@ -11,11 +11,7 @@ Web Tools is a collection of AI-enhanced Python scripts designed to augment the 
 ## Getting Started
 
 ### Prerequisites
-Ensure you have Python 3.8+ installed on your system. You'll also need to install the following libraries:
-
-```sh
-pip install beautifulsoup4 requests Pillow transformers
-```
+Ensure you have Python 3.8+ installed on your system. You'll also need API keys for the various LLMs.
 
 ### Installation
 1. Clone the repository to your local machine:
