@@ -8,6 +8,12 @@ Web Tools is a collection of AI-enhanced Python scripts designed to augment the 
 - `content_enhancer.py`: Analyzes webpage content to provide actionable SEO advice and content enhancement tips, helping to increase visibility and engagement.
 - `summarize.py`: Efficiently condenses long articles or documents, extracting and highlighting key points and summaries, ideal for quick comprehension.
 
+## Features coming soon
+- `keyword_extractor.py`: Identifies the most relevant keywords and phrases from a webpage's content to help optimize SEO and content strategy.
+- `readability_analyzer.py`: Assesses the readability of a webpage's content using metrics like the Flesch-Kincaid readability score and provides suggestions for improvement.
+- `sentiment_analyzer.py`: Determines the overall sentiment (positive, negative, or neutral) of a webpage's content, which can be useful for brand monitoring and reputation management.
+- `broken_link_checker.py`: Scans a webpage for broken links and provides a report of the URLs that need to be fixed.
+
 ## Getting Started
 
 ### Prerequisites
@@ -37,9 +43,9 @@ python <script_name>.py --<option> <value>
 For example:
 - Generating Alt Text for Images: `python get_alt_text.py '<image_url>'`
 This script accepts an image URL as input and prints the generated alt text to stdout.
-- Enhancing Web Content: `python content_enhancer.py <url>`
+- Enhancing Web Content: `python content_enhancer.py '<url>'`
 This script accepts a webpage URL as input and prints actionable SEO advice and content enhancement tips to stdout.
-- Summarizing Articles or Documents: `python summarize.py <url>'`
+- Summarizing Articles or Documents: `python summarize.py '<url>'`
 This script accepts a webpage URL as input and prints a concise summary highlighting the key points and main takeaways to stdout.
 
 ## Contributing
