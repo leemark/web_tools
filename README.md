@@ -39,7 +39,8 @@ For example:
 This script accepts an image URL as input and prints the generated alt text to stdout.
 - Enhancing Web Content: `python content_enhancer.py <url>`
 This script accepts a webpage URL as input and prints actionable SEO advice and content enhancement tips to stdout.
-- Summarizing Text: `python summarize.py '<URL of the article/document to summarize>'`
+- Summarizing Articles or Documents: `python summarize.py <url>'`
+This script accepts a webpage URL as input and prints a concise summary highlighting the key points and main takeaways to stdout.
 
 ## Contributing
 Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. Any contributions you make are greatly appreciated.
