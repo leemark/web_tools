@@ -35,9 +35,10 @@ python <script_name>.py --<option> <value>
 ```
 
 For example:
-- Generating Alt Text for Images: `python get_alt_text.py --image <URL or path to your image>`
-- Enhancing Web Content: `python content_enhancer.py --url <URL of the webpage you want to analyze>`
-- Summarizing Text: `python summarize.py --url <URL of the article/document to summarize>`
+- Generating Alt Text for Images: `python get_alt_text.py '<image_url>'`
+This script accepts an image URL as input and prints the generated alt text to stdout.
+- Enhancing Web Content: `python content_enhancer.py '<URL of the webpage you want to analyze>'`
+- Summarizing Text: `python summarize.py '<URL of the article/document to summarize>'`
 
 ## Contributing
 Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. Any contributions you make are greatly appreciated.

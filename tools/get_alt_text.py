@@ -3,10 +3,10 @@ import os
 import anthropic
 import base64
 import httpx
+import sys
 
 # Load environment variables
 load_dotenv()
-
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 def generate_alt_text(image_url):
@@ -48,15 +48,20 @@ def generate_alt_text(image_url):
 
         # Extract the generated alt text from the API response
         alt_text = message.content[0].text
-
         return alt_text
 
     except httpx.HTTPError as e:
-        print(f"Error downloading image: {str(e)}")
+        print(f"Error downloading image: {str(e)}", file=sys.stderr)
+        sys.exit(1)
     except anthropic.APIError as e:
-        print(f"Error calling Anthropic API: {str(e)}")
+        print(f"Error calling Anthropic API: {str(e)}", file=sys.stderr)
+        sys.exit(1)
 
-# Example usage
-image_url = "https://picsum.photos/id/42/3456/2304"
-alt_text = generate_alt_text(image_url)
-print(f"Generated Alt Text: {alt_text}")
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python get_alt_text.py <image_url>", file=sys.stderr)
+        sys.exit(1)
+
+    image_url = sys.argv[1]
+    alt_text = generate_alt_text(image_url)
+    print(alt_text)
